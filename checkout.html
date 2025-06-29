@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .log{
+      display: flex;
+      height: 80px;
+    }
+    .logo{
+      color: blue;
+      font-size: xx-large;
+      padding: 20px 50px;
+    }
+    #tab{
+      padding: 20px;
+      margin-left: 800px;
+       display: flex;
+      gap: 20px;
+    }
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.left-menu a,
+.right-menu a,
+.menu-button {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.left-menu,
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
+.flag-icon {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.breadcrumb {
+      font-size: 14px;
+      color: #666;
+      margin-top: 30px;
+      margin-left: 150px;
+    }
+.content-main{
+    width: 1180px;
+    height: 580px;
+    margin-top: 20px;
+    margin-left: 130px;
+    display: flex;
+    gap: 30px;
+    border: 1px solid rgb(202, 199, 199);
+    box-shadow: #555;
+    border-radius: 4px;
+}
+
+.container{
+  width: 500px;
+}
+
+.shirt img{
+    height: 380px;
+    width: 320px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.rating{
+    color: orange;
+    margin-bottom: 15px;
+}
+.price-box {
+      display: flex;
+      background-color: #ffd7dd;
+      overflow: hidden;
+      max-width: 500px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    }
+
+    .price-item {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      border-right: 1px solid #ddd;
+    }
+
+    .price-item:last-child {
+      border-right: none;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .price.red {
+      color: #e60000;
+    }
+
+    .range {
+      font-size: 13px;
+      color: #555;
+    }
+    .dash{
+        width: 300px;
+        height: 340px;
+        margin-top: 22px;
+        margin-left: 20px;
+        margin-right: 12px;
+        border-radius: 6px ;
+        border: 1px solid grey;
+        box-shadow: #555;
+    }
+    .right{
+        display: flex;
+    }
+    .right img{
+        height: 50px;
+        width: 50px;
+        padding: 14px 14px;
+    }
+    .right h5{
+        margin-left: 10px;
+    }
+    .flag{
+      display: flex;
+
+    }
+    .flag img{
+      height: 40px;
+      width: 40px;
+      padding: 16px;
+    }
+    .verify{
+     margin-left: 25px;
+     margin-top: 2px;
+    }
+    .world{
+     margin-left: 25px;
+     margin-top: 2px;
+    }
+    
+   .inquiry{
+    height: 35px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: large;
+    cursor: pointer;
+
+
+   }
+   .profile{
+     height: 35px;
+    width: 200px;
+    color: black;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 6px;
+    border: 1px grey;
+   }
+   .description{
+  width: 800px;
+   height: 620px;
+    margin-top: 20px;
+    margin-left: 130px;
+    gap: 30px;
+    border: 1px solid rgb(202, 199, 199);
+    box-shadow: #555;
+    border-radius: 4px;
+
+}
+.review{
+  margin-left: 15px;
+}
+.table-1 {
+      border-collapse: collapse;
+      width: 50%;
+      margin-left: 30px;
+    }
+    td {
+      border: 1px solid black; 
+      padding: 8px;
+      text-align: center;
+    }
+    tr {
+      border: 1px solid black;
+    }
+
+  .pro p{
+      margin-left: 30px;
+    }
+.sidebar{
+  display: flex;
+  gap: 20px;
+}
+.side{
+  border: 1px solid rgb(202, 199, 199);
+  height: 500px;
+  width: 350px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+.side h3{
+  padding: 12px 10px;
+}
+.like{
+  height: 80px;
+  width:300px;
+  display:flex;
+  margin-left: 20px;
+  gap: 20px;
+
+}
+.like img{
+  height:80px ;
+  width: 100px;
+}
+.relate{
+   width: 1180px;
+   border-radius: 4px;
+   margin-left: 130px;
+   height: 400px;
+   border: 1px solid rgb(184, 184, 184);
+   box-shadow: #555;
+
+}
+.relate h3{
+  padding: 6px 8px;
+  margin-left: 20px;
+}
+.box{
+  display: flex;
+  height: 300px;
+}
+.box1{
+  height: 370px;
+  width : 300px;
+}
+
+.box1 img{
+  display: inline;
+  object-fit: cover;
+  height: 180px;
+  width: 150px;
+  margin: 5px;
+  gap: 30px;
+  margin-left: 45px;
+  border-radius: 5px;
+}
+.box1-text{
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: large;
+}
+
+.box2{
+  height: 370px;
+  /* background-color: #333; */
+  width : 300px;
+
+}
+.box2 img{
+  display: inline;
+  object-fit: cover;
+  height: 180px;
+  width: 150px;
+  margin: 5px;
+  gap: 30px;
+  margin-left: 30px;
+  border-radius: 5px;
+
+
+}
+.box2-text{
+  margin-left: 90px;
+  margin-top: 30px;
+  font-size: large;
+}
+.box3{
+  height: 370px;
+  /* background-color: #3b1414; */
+  width : 300px;
+
+}
+.box3 img{
+  display: inline;
+  object-fit: cover;
+  height: 180px;
+  width: 150px;
+  margin: 5px;
+  gap: 30px;
+  margin-left: 35px;
+  border-radius: 5px;
+
+
+}
+.box3-text{
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: large;
+}
+.box4{
+  height: 370px;
+  /* background-color: #4d7986; */
+  width : 300px;
+
+}
+.box4 img{
+  display: inline;
+  object-fit: cover;
+  height: 180px;
+  width: 150px;
+  margin: 5px;
+  gap: 30px;
+  margin-left: 35px;
+  border-radius: 5px;
+
+
+}
+.box4-text{
+  margin-left: 30px;
+  margin-top: 40px;
+  font-size: large;
+}
+
+.box5{
+  height: 370px;
+  /* background-color: #f0c0e1; */
+  width : 300px;
+
+}
+.box5 img{
+  display: inline;
+  object-fit: cover;
+  height: 180px;
+  width: 150px;
+  margin: 5px;
+  gap: 30px;
+  margin-left: 40px;
+  border-radius: 5px;
+
+
+}
+.box5-text{
+  margin-left: 70px;
+  margin-top: 30px;
+  font-size: large;
+}
+.blue{
+  background-color: blue;
+  width: 1180px;
+  border-radius: 8px;
+  margin-left: 50px;
+  height: 200px;
+  margin-left: 130px;
+}
+.text{
+width: 600px;
+padding: 10px; 
+height:20px;
+color: white;
+}
+
+.text1 {
+  color: white;
+  margin-left: 30px;
+  width: 500px;
+  padding: 10px;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-size: large;
+  height: 30px;
+}
+.shop{
+  margin-left: 950px;
+  height: 50px;
+  width: 150px;
+  border-radius: 8px ;
+  color: white;
+  background-color: orangered;
+  font-size: large;
+   margin-bottom: 250px;
+   cursor: pointer;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #3f7df7;
+  margin-bottom: 10px;
+}
+
+.logo i {
+  background: #e0ecff;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.descriptionnn {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  color: #adb5bd;
+  background: #f1f3f5;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #3f7df7;
+  background: #e0ecff;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 130px;
+}
+
+.column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.column a {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.footer-app {
+  margin-top: 10px;
+  min-width: 150px;
+}
+
+.footer-app h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-app img {
+  width: 120px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+ .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f6f8;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.language-selector img {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.language-selector i {
+  font-size: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="log">
+    <div class="logo">🔒Brand</div>
+
+
+    
+        <div id="tab">
+      <div class="profile1"> 👤 <br> Profile</div>
+      <div class="profile2"> 💬 <br> Messages</div>
+      <div class="profile3"> 📦 <br> Order</div>
+      <div class="profile4">
+  <a href="cart.html">🛒 <br> My Cart</a>
+      </div>
+      </div>
+    </div>
+  
+
+
+  <hr>
+   <div class="top-nav">
+    <div class="left-menu">
+
+      
+<button class="menu-button" onclick="location.href='lsiting.html'">
+  &#9776; All Category
+</button>
+
+
+      <a href="hotoffers.html">Hot offers</a>
+      <a href="giftbox.html">Gift boxes</a>
+      <a href="projects.html">Projects</a>
+      <a href="#">Menu item</a>
+      <div class="dropdown">
+        <a href="#">Help ▾</a>
+      </div>
+    </div>
+    <div class="right-menu">
+      <div class="dropdown">
+        <a href="#">English, USD ▾</a>
+      </div>
+      <div class="dropdown">
+        <a href="#">Ship to <img src="https://flagcdn.com/de.svg" alt="Germany Flag" class="flag-icon"></a>
+      </div>
+    </div>
+  </div>
+ <div class="breadcrumb">Home > Clothing  > men's wear > <strong>Summer Clothing</strong></div>
+
+<br>
+
+<div class="content-main">
+    
+      <div class="shirt">  <img src="t shirt.webp" alt=""></div>
+
+      <div class="container">
+       <h3> ✅ In stock</h3>
+       <h2>Mens long sleeve Tishirt cotton base <br> layer slim muscle</h2>
+       <div class="rating"> ★★★★☆ 9.3  </div>
+
+        <div class="price-box">
+    <div class="price-item">
+      <div class="price red">$98.00</div>
+      <div class="range">50–100 pcs</div>
+    </div>
+    <div class="price-item">
+      <div class="price">$90.00</div>
+      <div class="range">100–700 pcs</div>
+    </div>
+    <div class="price-item">
+      <div class="price">$78.00</div>
+      <div class="range">700+ pcs</div>
+    </div>
+  </div>
+  <br>
+  <pre>price:                      Negotiable</pre>
+  
+  <hr>
+  <pre>Type:                       Classic Shoes</pre>
+   <pre>Material:                   Plastic Material</pre>
+   <pre>Design:                     Modern nice</pre>
+   <hr>
+  <pre> Cutomization:                Customize logo and design custom packages</pre>
+  <pre> protection:                  Refund Policy</pre>
+   <pre> Warranty:                    2years Full warranty</pre>
+   <hr>
+      </div>
+          
+          <div class="dash">
+            <div class="right">
+       <img src="R.jpg" alt="">  
+       <h4>Supplier<br> Guanjoi trading LLC</h4>
+      </div>
+
+     
+
+      <div class="flag">
+        <img src="german.png" alt="german">
+        <h5>Germany , Berlin</h5>
+      </div>
+
+      <div class="verify">
+              <pre> ✅      Verify</pre>
+
+          </div>
+         
+     <div class="world">
+              <pre> 🌍      Worldwide Shipping</pre>
+
+          </div>
+          <br>
+
+         <button class="inquiry">Send Inquiry</button><br>
+         <button class="profile">Seller's profile</button>
+
+    
+
+</div>
+</div>
+       <br>
+       <div class="sidebar">
+<div class="description">
+  <main class="main">
+     <div class="left-menu">
+
+      <a href="#"><u>Description</u></a>
+      <a href="#">Review</a>
+      <a href="#">Shipping</a>
+      <a href="#">About Seller</a>
+      
+    </div>
+    <hr>
+    <br>
+  <div class="review"> <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
+     illum sapiente repellat, <br> sint molestias mollitia vitae delectus 
+     facere doloremque eligendi nesciunt,<br> quas blanditiis qui? Sunt minus
+      quidem laboriosam quasi, id, in saepe illo adipisci sapiente eum obcaecati amet. <br>
+      Omnis ad error necessitatibus eligendi nam, exercitationem 
+     autem eaque veniam molestias eum voluptatibus voluptate ipsam in, <br>
+     cumque vero. Quisquam dolorum soluta iste labore quaerat, quibusdam
+     dolore tempora quae facere <br> pariatur repellat quo,  enim, praesentiu
+     unde dolorem. Assumenda eligendi alias, enim dolore, est nobis deserunt 
+    blanditiis <br> rem ducimus voluptates ipsa asperiores exercitationem corporis 
+    rerum culpa reprehenderit quam natus! Nostrum inventore quis doloribus eos.</p></div>
+  
+
+<table class="table-1">
+   
+    <tr>
+      <td>Model</td>
+      <td>#789898</td>
+    </tr>
+    <tr>
+      <td>Style</td>
+      <td>Calssic Style</td>
+    </tr>
+    <tr>
+      <td>Certificate</td>
+      <td>ISO-89704563</td>
+    </tr>
+    <tr>
+      <td>Size</td>
+      <td>34mm x 450mm x 19mm</td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td>36 GB RAM</td>
+    </tr>
+  </table>
+ 
+  <div class="pro">
+    <p>✔  Some great feature name here.</p>
+    <p>✔  Lorem ipsum dolor sit amet.</p>
+    <p>✔  consectetur adipisicing elit. Laborum, consequuntur.</p>
+    <p>✔  Omnis temporibus in ad distinctio exercitationem nemo.</p>
+  </div>
+  
+  </main>
+</div>
+<div class="side">
+   
+  <h3>You may like</h3>
+
+  <div class="like">
+    <img src="coat.jpg" alt="">
+    <p><b>Men blazer's sets elegant Formal</b> <br>$7.00-$90.00</p>
+  </div>
+
+  <div class="like">
+    <img src="t shirt.webp" alt="">
+    <p><b>Men shirt sleeve polo contrast</b> <br>$7.00-$90.00</p>
+  </div>
+  <div class="like">
+    <img src="jacket.jpg" alt="">
+    <p><b>Apple watch series Space gray</b> <br>$7.00-$90.00</p>
+  </div>
+  <div class="like">
+    <img src="t shirt.webp" alt="">
+    <p><b>Basketball crew socks long stuff</b> <br>$7.00-$90.00</p>
+  </div>
+  <div class="like">
+    <img src="school bag.jpg" alt="">
+    <p><b>New summer men's castrol t-shirt</b> <br>$7.00-$90.00</p>
+  </div>
+
+
+</div>
+ </div>
+      <br>
+ <div class="relate">
+  <h3>Related products</h3>
+  <div class="box">
+  <div class="box1"><img src="t shirt.webp" alt="t-shirt"><br>
+  <div class="box1-text"> <b>$10.30</b><br> T-shirts with multiple colors</div> 
+  </div>
+<div class="box2"><img src="jacket.jpg" alt="jacket"><br>
+  <div class="box1-text"> <b>$10.30</b><br> Jeans jackets in  brown colors.</div> 
+</div>
+<div class="box3"><img src="coat.jpg" alt="coat">
+  <div class="box1-text"> <b>$12.50</b><br> Blue medium coat medium size. </div> 
+</div>
+<div class="box4"><img src="travell bag.jpg" alt="travel bag">
+  <div class="box1-text"> <b>$34.00</b><br> Jeans bag for travelling. </div> 
+</div>
+<div class="box5"><img src="school bag.jpg" alt="school bag">
+  <div class="box1-text"> <b>$99.00</b><br> Leather Bag </div> 
+</div>
+</div>
+ </div>
+<br>
+
+<div class="blue">
+<div class="text"><h1>Super discount on more than 100 USD</h1></div>
+<div class="text1"><p>Have you ever finally just write dummy info</p></div>
+  <button class="shop"> Shop now</button>
+</div>
+<br>
+<br>
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+      <!-- Brand Section -->
+      <div class="footer-brand">
+        <div class="logo">
+          <!-- <i class="fas fa-shopping-bag"></i> -->
+          <span>🔒Brand</span>
+        </div>
+        <p class="descriptionnn">Best information about the company gies here but now lorem ipsum is</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+      <!-- Links Columns -->
+      <div class="footer-links">
+        <div class="column">
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Find store</a>
+          <a href="#">Categories</a>
+          <a href="#">Blogs</a>
+        </div>
+        <div class="column">
+          <h4>Partnership</h4>
+          <a href="#">About Us</a>
+          <a href="#">Find store</a>
+          <a href="#">Categories</a>
+          <a href="#">Blogs</a>
+        </div>
+        <div class="column">
+          <h4>Information</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Money Refund</a>
+          <a href="#">Shipping</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="column">
+          <h4>For users</h4>
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+          <a href="#">Settings</a>
+          <a href="#">My Orders</a>
+        </div>
+      </div>
+
+      <!-- App Section -->
+      <div class="footer-app">
+        <h4>Get app</h4>
+        <!-- <img src="" alt="App Store" /> -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+         <a href="https://g.co/kgs/qN6pTs4">Google play</a>
+
+      </div>
+     
+    </div>
+  </footer>
+ 
+<div class="footer-bottom">
+  <p>© 2023 Ecommerce.</p>
+  <div class="language-selector">
+    <img src="https://flagcdn.com/us.svg" alt="English" />
+    <span>English</span>
+    <i class="fas fa-chevron-up"></i>
+  </div>
+</div>
+
+
+</body>
+</html>
