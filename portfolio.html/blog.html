@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog - Read my latest articles and insights on web development and design">
+    <meta name="keywords" content="blog, articles, web development, design, tutorials">
+    <title>Blog - Your Name Portfolio</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Thoughts, tutorials, and insights on web development and design</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="development">Development</button>
+                <button class="category-btn" data-category="design">Design</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+                <button class="category-btn" data-category="insights">Insights</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-article">
+                <div class="featured-image">
+                    <img src="images/blog-featured.jpg" alt="Featured Blog Post">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-category">Development</span>
+                        <span class="post-date">December 15, 2024</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                    <h2>Building Modern Web Applications with React and TypeScript</h2>
+                    <p>
+                        Explore the best practices for creating scalable and maintainable web applications 
+                        using React and TypeScript. Learn about component architecture, state management, 
+                        and performance optimization techniques.
+                    </p>
+                    <a href="#" class="read-more-btn">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-category="design">
+                    <div class="blog-image">
+                        <img src="images/blog1.jpg" alt="UI/UX Design Trends">
+                        <div class="blog-overlay">
+                            <a href="#" class="read-link">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Design</span>
+                            <span class="post-date">December 10, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <h3>UI/UX Design Trends for 2024</h3>
+                        <p>
+                            Discover the latest design trends that are shaping the digital landscape 
+                            and how to implement them in your projects.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Trends</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="images/blog2.jpg" alt="CSS Grid Tutorial">
+                        <div class="blog-overlay">
+                            <a href="#" class="read-link">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tutorials</span>
+                            <span class="post-date">December 5, 2024</span>
+                            <span class="read-time">12 min read</span>
+                        </div>
+                        <h3>Mastering CSS Grid: A Complete Guide</h3>
+                        <p>
+                            Learn how to create complex layouts with CSS Grid. From basic concepts 
+                            to advanced techniques with practical examples.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Grid</span>
+                            <span class="tag">Tutorial</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-category="development">
+                    <div class="blog-image">
+                        <img src="images/blog3.jpg" alt="JavaScript Performance">
+                        <div class="blog-overlay">
+                            <a href="#" class="read-link">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Development</span>
+                            <span class="post-date">November 28, 2024</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <h3>JavaScript Performance Optimization Tips</h3>
+                        <p>
+                            Practical techniques to improve your JavaScript application's performance 
+                            and provide better user experience.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-category="insights">
+                    <div class="blog-image">
+                        <img src="images/blog4.jpg" alt="Remote Work">
+                        <div class="blog-overlay">
+                            <a href="#" class="read-link">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Insights</span>
+                            <span class="post-date">November 20, 2024</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <h3>The Future of Remote Work in Tech</h3>
+                        <p>
+                            Exploring how remote work is changing the tech industry and what it means 
+                            for developers and designers.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Remote Work</span>
+                            <span class="tag">Tech Industry</span>
+                            <span class="tag">Future</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="images/blog5.jpg" alt="React Hooks">
+                        <div class="blog-overlay">
+                            <a href="#" class="read-link">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tutorials</span>
+                            <span class="post-date">November 15, 2024</span>
+                            <span class="read-time">10 min read</span>
+                        </div>
+                        <h3>React Hooks: Beyond useState and useEffect</h3>
+                        <p>
+                            Dive deep into advanced React Hooks and learn how to create custom hooks 
+                            for better code reusability.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Hooks</span>
+                            <span class="tag">Advanced</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-category="design">
+                    <div class="blog-image">
+                        <img src="images/blog6.jpg" alt="Color Theory">
+                        <div class="blog-overlay">
+                            <a href="#" class="read-link">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-category">Design</span>
+                            <span class="post-date">November 8, 2024</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <h3>Color Theory in Web Design</h3>
+                        <p>
+                            Understanding how colors work together and how to choose the perfect 
+                            color palette for your web projects.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Color Theory</span>
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Psychology</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-outline load-more-btn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to my newsletter and get the latest articles delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note">No spam, unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tags -->
+    <section class="popular-tags">
+        <div class="container">
+            <h3>Popular Tags</h3>
+            <div class="tags-cloud">
+                <a href="#" class="tag-link">JavaScript</a>
+                <a href="#" class="tag-link">React</a>
+                <a href="#" class="tag-link">CSS</a>
+                <a href="#" class="tag-link">UI/UX</a>
+                <a href="#" class="tag-link">Node.js</a>
+                <a href="#" class="tag-link">TypeScript</a>
+                <a href="#" class="tag-link">Performance</a>
+                <a href="#" class="tag-link">Design</a>
+                <a href="#" class="tag-link">Tutorial</a>
+                <a href="#" class="tag-link">Web Development</a>
+                <a href="#" class="tag-link">Frontend</a>
+                <a href="#" class="tag-link">Backend</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>Creating digital experiences that matter.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Mobile Apps</li>
+                        <li>Consulting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
